@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team AeRoVe website</title>
+    <link rel="stylesheet" href="aerove_css.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="brand-icon">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLhVkLFEmJHiIFYlCl-BCKligXP_0rYiAJtQ&s">
+                </div>
+                <span class="brand-text">UMIC IITB</span>
+                <div class="brand-icon">
+                <img src="https://www.cse.iitb.ac.in/gramdrishti/static/images/iitb.png">
+                </div>
+            </div>
+            
+            <div class="nav-links">
+                <button class="nav-btn active" data-page="home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                        <polyline points="9,22 9,12 15,12 15,22"/>
+                    </svg>
+                    <span>Home</span>
+                </button>
+                <button class="nav-btn" data-page="team">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                    <span>Meet the Team</span>
+                </button>
+                <button class="nav-btn" data-page="tasks">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 11l3 3 8-8"/>
+                        <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9c1.51 0 2.93.37 4.18 1.03"/>
+                    </svg>
+                    <span>Tasks</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section id="home" class="page active">
+           <div class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title" id="typewriter"></h1>
+                    <p class="hero-subtitle">"A drone is often preferred for missions that are too 'dull, dirty, or dangerous' for manned aircraft." 
+                        Team AeRoVe of UMIC is on a never-ending pursuit of developing an ultimate system of autonomous fixed-wing as well as multirotor aircraft.</p>
+                </div>
+                
+                <div class="hero-images">
+                    <div class="image-grid">
+                        <div class="image-container">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0T7zFe1iPThNglSZXflNcUCBzn3Vg71qpzw&s" alt="Aerove pic 1" class="drone-image">
+                        </div>
+                        <div class="image-container">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS213LiTUgYorVUhB0Kyx7hyHg5igyyVl0SAQ&s" alt="Aerove pic 2" class="drone-image">
+                        </div>
+                        <div class="image-container">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK6whqmC1_l1h9VTbh_2JLXmV-R4N-eqhrpQ&s" alt="Aerove pic 3" class="drone-image">
+                        </div>
+                        <div class="image-container">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-o84uWoHw7zX0Ha498Xqvcw9k2HB21u78XQ&s" alt="Aerove pic 4" class="drone-image">
+                        </div>
+                        <div class="image-container main-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStBpyV1dQApJYBxQrJBaoMUYsx7W2TC60KCA&s" alt="Team AeRoVe Drone" class="drone-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
+            <div class="container">
+                <div class="content-grid">
+                    <!-- Announcements Section -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>📢 Recent Announcements</h2>
+                        </div>
+                        <div class="card-content">
+                            <div id="announcements-list" class="announcements-list"></div>
+                        </div>
+                    </div>
+
+                    <!-- Achievements Section -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>🏆 Team Achievements</h2>
+                        </div>
+                        <div class="card-content">
+                            <div id="achievements-list" class="achievements-list"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="team" class="page">
+            <div class="container">
+                <div class="page-header">
+                    <h1>Meet Our Team</h1>
+                    <p>Talented individuals driving innovation and excellence</p>
+                </div>
+                <div id="team-grid" class="team-grid"></div>
+            </div>
+        </section>
+
+        <section id="tasks" class="page">
+            <div class="container">
+                <div class="page-header">
+                    <h1>Task Board</h1>
+                    <p>Track progress and manage project workflows</p>
+                </div>
+                <div class="task-board">
+                    <div class="task-column">
+                        <div class="column-header">
+                            <h3>To Do</h3>
+                            <span class="task-count" id="todo-count">0</span>
+                        </div>
+                        <div id="todo-tasks" class="tasks-list" data-column="todo"></div>
+                    </div>
+                    <div class="task-column">
+                        <div class="column-header">
+                            <h3>In Progress</h3>
+                            <span class="task-count" id="progress-count">0</span>
+                        </div>
+                        <div id="progress-tasks" class="tasks-list" data-column="progress"></div>
+                    </div>
+                    <div class="task-column">
+                        <div class="column-header">
+                            <h3>Completed</h3>
+                            <span class="task-count" id="completed-count">0</span>
+                        </div>
+                        <div id="completed-tasks" class="tasks-list" data-column="completed"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="aerove_js.js"></script>
+</body>
+</html>
